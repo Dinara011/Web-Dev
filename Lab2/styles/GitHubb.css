@@ -1,0 +1,227 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1f2328;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+}
+
+
+h1 { font-size: 48px; font-weight: 800; letter-spacing: -1px; margin-bottom: 16px; }
+h2 { font-size: 32px; font-weight: 700; margin-bottom: 16px; }
+h3 { font-size: 24px; font-weight: 600; }
+p { color: #636c76; font-size: 16px; }
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.btn-black {
+    background-color: #1f2328;
+    color: white;
+    border: 1px solid #1f2328;
+}
+
+.btn-black:hover { background-color: #333; }
+
+.btn-white {
+    background-color: white;
+    color: #1f2328;
+    border: 1px solid #d0d7de;
+}
+
+.btn-white:hover { background-color: #f3f4f6; }
+
+.full-width { width: 100%; margin-top: 16px; }
+
+
+.hero {
+    text-align: center;
+    padding: 80px 0 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+
+.pricing-container {
+    display: flex;
+    gap: 32px;
+    align-items:stretch ; 
+    padding-bottom: 60px;
+    
+
+    
+}
+
+
+.card {
+    background: white;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 32px;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-name { font-size: 24px; margin-bottom: 8px; color: #1f2328; }
+.plan-desc { font-size: 14px; margin-bottom: 24px; min-height: 42px; }
+
+.price {
+    font-size: 48px;
+    font-weight: 500;
+    color: #1f2328;
+    line-height: 1;
+}
+
+.currency { font-size: 24px; vertical-align: top; }
+.period { font-size: 14px; color: #636c76; font-weight: 400; display: block; margin-top: 5px; }
+
+
+.card.enterprise {
+    border: 2px solid #0969da;
+    padding-top: 0; 
+    overflow: hidden;
+}
+
+.recommended-badge {
+    background-color: #0969da;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 8px 0;
+    margin-left: -32px; 
+    margin-right: -32px; 
+    margin-bottom: 24px;
+}
+
+.card.enterprise .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.features {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.features li {
+    padding-left: 24px;
+    margin-bottom: 12px;
+    position: relative;
+    font-size: 14px;
+    color: #1f2328;
+}
+
+.features li::before {
+    content: "›"; 
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #1f2328;
+}
+
+.everything-included {
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.addons-link {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #d0d7de;
+}
+.addons-link ul { list-style: none; margin-top: 10px; }
+.addons-link li { font-size: 13px; margin-bottom: 8px; font-weight: 600; color: #0969da; cursor: pointer; }
+.addons-link li::before { content: "› "; }
+
+
+.divider {
+    border: 0;
+    border-top: 1px solid #d0d7de;
+    margin: 60px 0;
+}
+
+
+
+.addons-section {
+    padding-bottom: 100px;
+}
+.section-subtitle { margin-bottom: 40px; }
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.addon-card {
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    padding: 24px;
+    transition: box-shadow 0.2s;
+}
+
+.addon-card:hover {
+    box-shadow: 0 8px 24px rgba(140,149,159,0.2);
+}
+
+.addon-card h4 { font-size: 18px; margin-bottom: 8px; color: #1f2328; }
+.addon-card p { font-size: 14px; margin-bottom: 16px; color: #636c76; }
+.addon-card a {
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.addon-card a:hover { text-decoration: underline; }
+
+
+@media (max-width: 900px) {
+    .pricing-container {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%;
+    }
+
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 { font-size: 32px; }
+}
