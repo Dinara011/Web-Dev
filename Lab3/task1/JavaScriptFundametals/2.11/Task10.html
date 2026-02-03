@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task10</title>
+</head>
+<body>
+<script>
+	'use strict';
+	let a = prompt("Login : ");
+	if (a == "Admin"){
+		let p = prompt("Password: ");
+		if (p === "" || p = null ){
+			alert("Отменено");
+		}
+		else if (p === 'Я Главный'){
+            alert("Здраствуйте!");
+		}
+		else{
+			alert("Неверный пароль");
+		}
+	}
+	else if (a==='' || a === null){
+		alert('Отменено');
+	}
+	else{
+        alert('Я вас не знаю');
+	}
+</script>
+</body>
+</html>
