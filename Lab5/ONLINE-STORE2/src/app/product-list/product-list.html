@@ -1,0 +1,11 @@
+<div class="product-grid" *ngIf="products.length > 0; else noProducts">
+  <app-product-item 
+    *ngFor="let prod of products" 
+    [product]="prod" 
+    (remove)="onProductRemove($event)">
+  </app-product-item>
+</div>
+
+<ng-template #noProducts>
+  <p style="text-align: center; font-size: 18px; padding: 20px;">Бұл категорияда тауар қалмады.</p>
+</ng-template>

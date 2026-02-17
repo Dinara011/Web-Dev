@@ -1,0 +1,58 @@
+.product-card {
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.main-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Басылып тұрған кішкентай суреттің рамкасы қалыңдайды */
+.thumb.active-thumb {
+  border: 2px solid #333;
+}
+
+.product-title { font-size: 18px; margin: 10px 0; line-height: 1.3; }
+.product-title a { text-decoration: underline; color: #0000ee; font-weight: bold; }
+.product-desc { font-size: 14px; color: #000; margin-bottom: 15px; line-height: 1.4; }
+.stats { font-size: 16px; margin-bottom: 10px; display: flex; justify-content: space-around; font-weight: bold;}
+.likes { color: #f14635; }
+.price { font-size: 20px; font-weight: bold; color: #000; margin-bottom: 15px; }
+
+.actions { display: flex; justify-content: center; gap: 5px; margin-bottom: 10px; }
+.btn-like { background: #ff4757; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+.btn-delete { background: #2f3542; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+.btn-whatsapp { background: #25D366; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+.btn-telegram { background: #0088cc; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }

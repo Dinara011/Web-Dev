@@ -1,0 +1,34 @@
+<div class="product-card">
+  <div class="image-container">
+    <img [src]="product.image" [alt]="product.name" class="main-img">
+  </div>
+
+  <div class="gallery" *ngIf="product.images && product.images.length > 0">
+    <img 
+      *ngFor="let img of product.images" 
+      [src]="img" 
+      (click)="changeImage(img)" 
+      class="thumb"
+      [class.active-thumb]="img === product.image">
+  </div>
+
+  <h3 class="product-title"><a [href]="product.link" target="_blank">{{ product.name }}</a></h3>
+  <p class="product-desc">{{ product.description }}</p>
+
+  <div class="stats">
+    <span class="rating">⭐️ {{ product.rating }}</span>
+    <span class="likes">❤️ {{ product.likes }}  </span>
+  </div>
+
+  <p class="price">{{ product.price }} ₸</p>
+
+  <div class="actions">
+    <button (click)="likeProduct()" class="btn-like">❤️ Like</button>
+    <button (click)="deleteProduct()" class="btn-delete">🗑 Delete</button>
+  </div>
+
+  <div class="actions" style="margin-top: 10px;">
+    <button (click)="shareProduct('whatsapp', product)" class="btn-whatsapp">WhatsApp</button>
+    <button (click)="shareProduct('telegram', product)" class="btn-telegram">Telegram</button>
+  </div>
+</div>
