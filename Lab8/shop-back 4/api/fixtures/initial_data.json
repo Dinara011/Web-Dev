@@ -1,0 +1,37 @@
+[
+  {"model": "api.category", "pk": 1, "fields": {"name": "Electronics"}},
+  {"model": "api.category", "pk": 2, "fields": {"name": "Clothing"}},
+  {"model": "api.category", "pk": 3, "fields": {"name": "Books"}},
+  {"model": "api.category", "pk": 4, "fields": {"name": "Sports"}},
+  {"model": "api.category", "pk": 5, "fields": {"name": "Home & Kitchen"}},
+
+  {"model": "api.product", "pk": 1,  "fields": {"name": "iPhone 15",        "price": 999.99,  "description": "Apple iPhone 15 128GB",               "count": 50,  "is_active": true,  "category": 1}},
+  {"model": "api.product", "pk": 2,  "fields": {"name": "Samsung Galaxy S24","price": 849.99, "description": "Samsung Galaxy S24 256GB",             "count": 40,  "is_active": true,  "category": 1}},
+  {"model": "api.product", "pk": 3,  "fields": {"name": "MacBook Air M2",   "price": 1299.99, "description": "Apple MacBook Air 13-inch M2 chip",    "count": 20,  "is_active": true,  "category": 1}},
+  {"model": "api.product", "pk": 4,  "fields": {"name": "Sony WH-1000XM5",  "price": 349.99,  "description": "Sony Noise Cancelling Headphones",     "count": 80,  "is_active": true,  "category": 1}},
+  {"model": "api.product", "pk": 5,  "fields": {"name": "iPad Pro 12.9",    "price": 1099.99, "description": "Apple iPad Pro 12.9-inch Wi-Fi 256GB", "count": 30,  "is_active": true,  "category": 1}},
+
+  {"model": "api.product", "pk": 6,  "fields": {"name": "Nike Air Max 270",     "price": 150.00, "description": "Men's Nike Air Max 270 Running Shoes",  "count": 100, "is_active": true,  "category": 2}},
+  {"model": "api.product", "pk": 7,  "fields": {"name": "Levi's 501 Jeans",     "price": 59.99,  "description": "Classic Levi's 501 Original Fit Jeans", "count": 200, "is_active": true,  "category": 2}},
+  {"model": "api.product", "pk": 8,  "fields": {"name": "Adidas Hoodie",        "price": 75.00,  "description": "Adidas Essential Fleece Hoodie",        "count": 150, "is_active": true,  "category": 2}},
+  {"model": "api.product", "pk": 9,  "fields": {"name": "Zara Summer Dress",    "price": 49.99,  "description": "Zara Floral Print Summer Dress",        "count": 90,  "is_active": true,  "category": 2}},
+  {"model": "api.product", "pk": 10, "fields": {"name": "Polo Ralph Lauren Tee","price": 45.00,  "description": "Ralph Lauren Classic Fit Polo T-Shirt", "count": 120, "is_active": false, "category": 2}},
+
+  {"model": "api.product", "pk": 11, "fields": {"name": "Clean Code",           "price": 35.99, "description": "Clean Code by Robert C. Martin",         "count": 300, "is_active": true,  "category": 3}},
+  {"model": "api.product", "pk": 12, "fields": {"name": "The Pragmatic Programmer","price": 39.99,"description": "The Pragmatic Programmer by Hunt & Thomas","count": 250,"is_active": true, "category": 3}},
+  {"model": "api.product", "pk": 13, "fields": {"name": "Atomic Habits",        "price": 18.99, "description": "Atomic Habits by James Clear",            "count": 400, "is_active": true,  "category": 3}},
+  {"model": "api.product", "pk": 14, "fields": {"name": "Deep Work",            "price": 16.99, "description": "Deep Work by Cal Newport",               "count": 350, "is_active": true,  "category": 3}},
+  {"model": "api.product", "pk": 15, "fields": {"name": "Python Crash Course",  "price": 29.99, "description": "Python Crash Course by Eric Matthes",    "count": 200, "is_active": true,  "category": 3}},
+
+  {"model": "api.product", "pk": 16, "fields": {"name": "Yoga Mat",            "price": 29.99,  "description": "Non-slip Premium Yoga Mat 6mm",          "count": 200, "is_active": true,  "category": 4}},
+  {"model": "api.product", "pk": 17, "fields": {"name": "Dumbbell Set 20kg",   "price": 89.99,  "description": "Adjustable Dumbbell Set 20kg",           "count": 60,  "is_active": true,  "category": 4}},
+  {"model": "api.product", "pk": 18, "fields": {"name": "Jump Rope",           "price": 14.99,  "description": "Speed Jump Rope with Ball Bearings",     "count": 500, "is_active": true,  "category": 4}},
+  {"model": "api.product", "pk": 19, "fields": {"name": "Resistance Bands Set","price": 24.99,  "description": "Set of 5 Resistance Bands for Training", "count": 300, "is_active": true,  "category": 4}},
+  {"model": "api.product", "pk": 20, "fields": {"name": "Running Bottle 750ml","price": 19.99,  "description": "BPA-Free Sports Water Bottle 750ml",     "count": 400, "is_active": false, "category": 4}},
+
+  {"model": "api.product", "pk": 21, "fields": {"name": "Air Fryer 5L",       "price": 79.99,  "description": "Digital Air Fryer 5L with 8 Presets",    "count": 75,  "is_active": true,  "category": 5}},
+  {"model": "api.product", "pk": 22, "fields": {"name": "Coffee Maker",       "price": 54.99,  "description": "12-Cup Programmable Coffee Maker",       "count": 90,  "is_active": true,  "category": 5}},
+  {"model": "api.product", "pk": 23, "fields": {"name": "Blender Pro 1200W",  "price": 64.99,  "description": "High-Speed Blender 1200W with 2L Jar",   "count": 55,  "is_active": true,  "category": 5}},
+  {"model": "api.product", "pk": 24, "fields": {"name": "Non-stick Pan Set",  "price": 45.99,  "description": "3-Piece Non-stick Cookware Pan Set",     "count": 110, "is_active": true,  "category": 5}},
+  {"model": "api.product", "pk": 25, "fields": {"name": "Knife Block Set",    "price": 89.99,  "description": "Professional 7-Piece Kitchen Knife Set", "count": 40,  "is_active": true,  "category": 5}}
+]
